@@ -16,5 +16,8 @@ class AURA_API AAuraCharacter : public AAuraCharacterBase
 
 public:
 	AAuraCharacter();
+	void PossessedBy(AController* NewController);
+	void OnRep_PlayerState();
+	void InitAbilityActorInfo();
 	
 };
